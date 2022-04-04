@@ -36,7 +36,7 @@ l = st.slider('Do you have asthma? 1 for yes, 0 for no',min_value= 0, max_value 
 m = st.slider('Do you have kidney disease? 1 for yes, 0 for no',min_value= 0, max_value = 1, value=1)
 n = st.slider('Do you have skin cancer? 1 for yes, 0 for no',min_value= 0, max_value = 1, value=1)
 
-data = pd.read_csv('heart.csv')
+data = pd.read_csv(r'https://raw.githubusercontent.com/mirulmio/HeartDisease/main/heart.csv')
 
 labelencoder1 = LabelEncoder() #kalau nak encoder lebih dari satu
 labelencoder2 = LabelEncoder()
