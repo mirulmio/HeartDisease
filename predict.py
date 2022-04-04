@@ -92,7 +92,7 @@ def prediction(bmi, smoking, alcoholdrinking, stroke, physicalhealth, mentalheal
     heart_data2 = pd.DataFrame(columns = ['BMI', 'Smoking', 'AlcoholDrinking', 'Stroke', 'PhysicalHealth', 'MentalHealth', 'DiffWalking', 'Diabetic', 'PhysicalActivity',  'GenHealth', 'SleepTime', 'Asthma', 'KidneyDisease', 'SkinCancer' ])
     heart_data2 = heart_data2.append({'BMI' : bmi, 'Smoking' : smoking, 'AlcoholDrinking' : alcoholdrinking, 'Stroke' : stroke, 'PhysicalHealth' : physicalhealth, 'MentalHealth' :mentalhealth, 'DiffWalking' :diffwalking, 'Diabetic' :diabetic, 'PhysicalActivity' :physicalactivity,  'GenHealth' :genhealth, 'SleepTime' :sleeptime, 'Asthma' :asthma, 'KidneyDisease' :kidneydisease, 'SkinCancer' :skincancer}, ignore_index = True) 
     ypred = nb.predict(heart_data2)
-    st.write('Your prediction for have heart disease is:')
+    st.write('Your prediction to have heart disease is:')
     if ypred ==1:
       st.write('Yes')
     else:
