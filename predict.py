@@ -3,8 +3,6 @@ import numpy as np
 import pandas as pd
 
 #import matplotlib.pyplot as plt
-from matplotlib import pyplot as plt
-from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
@@ -12,8 +10,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.naive_bayes import GaussianNB
 
 from sklearn.metrics import classification_report
-
-
 
 st.title('Heart Disease Predictor')
 
@@ -103,8 +99,3 @@ def prediction(bmi, smoking, alcoholdrinking, stroke, physicalhealth, mentalheal
       st.write('Yes')
     else:
       st.write('No')  
-  
-
-
-
-
