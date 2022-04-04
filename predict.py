@@ -12,6 +12,8 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import classification_report
 
 st.title('Heart Disease Predictor')
+st.write('DISCLAIMER: Please do not refer this as your primary indicator to predict heart disease due to very low precision rate (only 40%).')
+st.write('Please refer to your qualified physician for more information. Use this at your own risk.')
 
 st.sidebar.write("""
 This is a web app demo using python libraries such as Streamlit, Sklearn etc
