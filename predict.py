@@ -30,7 +30,7 @@ f = st.slider('Thinking about your mental health, for how many days during the p
 g = st.slider('Do you have serious difficulty walking or climbing stairs? 1 for yes, 0 for no',min_value= 0, max_value = 1, value=1)
 h = st.slider('Do you have diabetes? 1 for yes, 0 for no',min_value= 0, max_value = 1, value=1)
 i = st.slider('Do you have exercise during the past 30 days other than your regular jobs? 1 for yes, 0 for no',min_value= 0, max_value = 1, value=1)
-j = st.slider('How you rate your general health? 1(bad) to 4(very good)',min_value= 0, max_value = 4, value=1)
+j = st.slider('How you rate your general health? 0(bad) to 4(very good)',min_value= 0, max_value = 4, value=1)
 k = st.slider('How long do you sleep in hours every day?',min_value= 0, max_value = 12, value=1)
 l = st.slider('Do you have asthma? 1 for yes, 0 for no',min_value= 0, max_value = 1, value=1)
 m = st.slider('Do you have kidney disease? 1 for yes, 0 for no',min_value= 0, max_value = 1, value=1)
