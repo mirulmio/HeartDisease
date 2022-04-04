@@ -101,7 +101,7 @@ def prediction(bmi, smoking, alcoholdrinking, stroke, physicalhealth, mentalheal
     st.write('Your prediction for have heart disease is:')
     if ypred ==1:
       st.write('Yes')
-      else
+      else:
       st.write('No')  
   
 
