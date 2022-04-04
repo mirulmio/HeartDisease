@@ -88,8 +88,6 @@ nb = GaussianNB()
 nb.fit(X_train_scaled, y_train)
 ypred = nb.predict(X_test)
 
-prediction(a,b,c,d,e,f,g,h,i,j,k,l,m,n)
-
 def prediction(bmi, smoking, alcoholdrinking, stroke, physicalhealth, mentalhealth, diffwalking, diabetic, physicalactivity, genhealth, sleeptime, asthma, kidneydisease, skincancer):
     heart_data2 = pd.DataFrame(columns = ['BMI', 'Smoking', 'AlcoholDrinking', 'Stroke', 'PhysicalHealth', 'MentalHealth', 'DiffWalking', 'Diabetic', 'PhysicalActivity',  'GenHealth', 'SleepTime', 'Asthma', 'KidneyDisease', 'SkinCancer' ])
     heart_data2 = heart_data2.append({'BMI' : bmi, 'Smoking' : smoking, 'AlcoholDrinking' : alcoholdrinking, 'Stroke' : stroke, 'PhysicalHealth' : physicalhealth, 'MentalHealth' :mentalhealth, 'DiffWalking' :diffwalking, 'Diabetic' :diabetic, 'PhysicalActivity' :physicalactivity,  'GenHealth' :genhealth, 'SleepTime' :sleeptime, 'Asthma' :asthma, 'KidneyDisease' :kidneydisease, 'SkinCancer' :skincancer}, ignore_index = True) 
@@ -99,3 +97,6 @@ def prediction(bmi, smoking, alcoholdrinking, stroke, physicalhealth, mentalheal
       st.write('Yes')
     else:
       st.write('No')  
+    
+prediction(a,b,c,d,e,f,g,h,i,j,k,l,m,n)
+
